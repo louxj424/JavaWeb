@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <!--<servlet>
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>com.netease.JavaWeb.HelloWorld</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/HelloWorld</url-pattern>
+    </servlet-mapping>-->
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- session config -->
+    <session-config>
+        <session-timeout>2</session-timeout>
+    </session-config>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error.html</location>
+    </error-page>
+
+    <servlet>
+        <servlet-name>TestSrvlet</servlet-name>
+        <servlet-class>com.netease.JavaWeb.TestServelt</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>TestSrvlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <!-- GetPostServlet config-->
+    <servlet>
+        <servlet-name>GetPostServlet</servlet-name>
+        <servlet-class>com.netease.JavaWeb.GetPostServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetPostServlet</servlet-name>
+        <url-pattern>/GetPostServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- servletconfig servlet-->
+    <servlet>
+        <servlet-name>ServeltConfigServlet</servlet-name>
+        <servlet-class>com.netease.JavaWeb.ServletConfigServlet</servlet-class>
+        <init-param>
+            <param-name>data1</param-name>
+            <param-value>value1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>data2</param-name>
+            <param-value>value2</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ServeltConfigServlet</servlet-name>
+        <url-pattern>/ServeltConfigServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!--serveltcontext servelt-->
+    <context-param>
+        <param-name>globalData1</param-name>
+        <param-value>globalValue1</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>globalData2</param-name>
+        <param-value>globalValue2</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>ServeltContextServelt</servlet-name>
+        <servlet-class>com.netease.JavaWeb.ServletContextServelt</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ServeltContextServelt</servlet-name>
+        <url-pattern>/ServletContextServelt</url-pattern>
+    </servlet-mapping>
+
+    <!-- UserServelt servelt-->
+    <servlet>
+        <servlet-name>UserServelt</servlet-name>
+        <servlet-class>com.netease.JavaWeb.user.UserServelt</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserServelt</servlet-name>
+        <url-pattern>/UserServelt</url-pattern>
+    </servlet-mapping>
+    
+    <!--ServletForward servlet-->
+    <servlet>
+        <servlet-name>ServletForward</servlet-name>
+        <servlet-class>com.netease.JavaWeb.ServletForward</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletForward</servlet-name>
+        <url-pattern>/ServletForward</url-pattern>
+    </servlet-mapping>
+    <!--ServletForwardExample servlet-->
+    <servlet>
+        <servlet-name>ServletForwardExample</servlet-name>
+        <servlet-class>com.netease.JavaWeb.ServletForwardExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletForwardExample</servlet-name>
+        <url-pattern>/ServletForwardExample</url-pattern>
+    </servlet-mapping>
+
+    <!--ServeltRedict servlet-->
+    <servlet>
+        <servlet-name>ServletRedict</servlet-name>
+        <servlet-class>com.netease.JavaWeb.ServletRedict</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRedict</servlet-name>
+        <url-pattern>/ServletRedict</url-pattern>
+    </servlet-mapping>
+
+    <!--ServeltRedictExample servlet-->
+    <servlet>
+        <servlet-name>ServletRedictExample</servlet-name>
+        <servlet-class>com.netease.JavaWeb.ServletRedictExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRedictExample</servlet-name>
+        <url-pattern>/ServletRedictExample</url-pattern>
+    </servlet-mapping>
+
+
+    
+
+</web-app>
